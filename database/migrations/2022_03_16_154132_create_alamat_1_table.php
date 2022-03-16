@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use phpDocumentor\Reflection\Types\Nullable;
 
 class CreateAlamat1Table extends Migration
 {
@@ -15,9 +16,8 @@ class CreateAlamat1Table extends Migration
     {
         Schema::create('alamat_1', function (Blueprint $table) {
             $table->id();
-            $table->string('alamat');
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
+            $table->string('alamat')->nullable();
+            $table->timestamps();
         });
     }
 
