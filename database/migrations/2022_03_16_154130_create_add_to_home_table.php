@@ -15,7 +15,7 @@ class CreateAddToHomeTable extends Migration
     {
         Schema::create('add_to_home', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nilai')->nullable();
         });
     }
 

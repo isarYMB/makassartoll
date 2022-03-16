@@ -98,7 +98,6 @@ Route::get('/about-us', 'AboutController@index')->name('about-us');
 Route::get('/map', 'MapController@index')->name('map');
 
 /*End*/
-Auth::routes();
 
 Route::get('/profil-user', 'HomeController@index')->name('home');
 
