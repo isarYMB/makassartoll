@@ -21,7 +21,7 @@ class CreateBillboardTable extends Migration
             $table->text('description');
             $table->text('specification');
             $table->integer('active');
-            $table->timestamps('created_at');
+            $table->timestamp('created_at');
             $table->integer('created_by');
             $table->integer('status');
         });

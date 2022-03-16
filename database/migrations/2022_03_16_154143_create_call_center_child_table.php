@@ -19,8 +19,7 @@ class CreateCallCenterChildTable extends Migration
             $table->string('title');
             $table->string('nomor');
             $table->string('deskripsi');
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
+            $table->timestamps();
         });
     }
 

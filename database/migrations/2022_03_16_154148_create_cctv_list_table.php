@@ -20,8 +20,7 @@ class CreateCctvListTable extends Migration
             $table->string('rtsp');
             $table->string('location');
             $table->string('desc');
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
+            $table->timestamps();
         });
     }
 

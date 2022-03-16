@@ -20,7 +20,7 @@ class CreateBannerTable extends Migration
             $table->integer('menu');
             $table->string('link');
             $table->integer('active');
-            $table->timestamps('created_at');
+            $table->timestamp('created_at');
         });
     }
 
