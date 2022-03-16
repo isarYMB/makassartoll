@@ -15,7 +15,8 @@ class CreateRegisterTable extends Migration
     {
         Schema::create('register', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('name')->nullable();
+            $table->string('link')->nullable();
         });
     }
 

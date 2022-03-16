@@ -15,6 +15,7 @@ class CreateTenderTable extends Migration
     {
         Schema::create('tender', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_proyek')->nullable();
             $table->timestamps();
         });
     }

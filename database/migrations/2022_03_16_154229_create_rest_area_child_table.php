@@ -15,6 +15,10 @@ class CreateRestAreaChildTable extends Migration
     {
         Schema::create('rest_area_child', function (Blueprint $table) {
             $table->id();
+            $table->integer('rest_area')->nullable();
+            $table->string('nama')->nullable();
+            $table->string('icon')->nullable();
+            $table->string('nama_inggris')->nullable();
             $table->timestamps();
         });
     }

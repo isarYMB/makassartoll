@@ -15,6 +15,9 @@ class CreateSertifikatBsdTable extends Migration
     {
         Schema::create('sertifikat_bsd', function (Blueprint $table) {
             $table->id();
+            $table->string('image')->nullable();
+            $table->string('judul')->nullable();
+            $table->integer('active')->nullable();
             $table->timestamps();
         });
     }

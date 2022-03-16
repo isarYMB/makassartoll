@@ -15,6 +15,10 @@ class CreateSejarahPerusahaanTable extends Migration
     {
         Schema::create('sejarah_perusahaan', function (Blueprint $table) {
             $table->id();
+            $table->date('tanggal')->nullable();
+            $table->string('judul_indo')->nullable();
+            $table->string('judul_eng')->nullable();
+            $table->integer('active')->default(1);
             $table->timestamps();
         });
     }

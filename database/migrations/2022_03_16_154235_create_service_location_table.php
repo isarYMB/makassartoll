@@ -15,7 +15,14 @@ class CreateServiceLocationTable extends Migration
     {
         Schema::create('service_location', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('name')->nullable();
+            $table->string('image')->nullable();
+            $table->string('location')->nullable();
+            $table->string('maps')->nullable();
+            $table->longText('description')->nullable();
+            $table->timestamp('created_at')->useCurrent();
+            $table->tinyInteger('active')->default(1);
+            $table->integer('kategori');
         });
     }
 
