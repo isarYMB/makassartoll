@@ -15,7 +15,9 @@ class CreateAlamat1Table extends Migration
     {
         Schema::create('alamat_1', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('alamat');
+            $table->timestamps('created_at');
+            $table->timestamps('updated_at');
         });
     }
 

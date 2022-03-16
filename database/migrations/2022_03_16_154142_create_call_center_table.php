@@ -15,7 +15,9 @@ class CreateCallCenterTable extends Migration
     {
         Schema::create('call_center', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('photo');
+            $table->longText('peraturan');
+            $table->string('deskripsi');
         });
     }
 

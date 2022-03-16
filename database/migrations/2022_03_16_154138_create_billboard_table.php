@@ -15,7 +15,15 @@ class CreateBillboardTable extends Migration
     {
         Schema::create('billboard', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('name');
+            $table->string('image');
+            $table->string('location');
+            $table->text('description');
+            $table->text('specification');
+            $table->integer('active');
+            $table->timestamps('created_at');
+            $table->integer('created_by');
+            $table->integer('status');
         });
     }
 
