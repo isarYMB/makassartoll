@@ -15,7 +15,8 @@ class CreateKategoriPosisiTable extends Migration
     {
         Schema::create('kategori_posisi', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('posisi')->nullable();
+            $table->integer('kategori_parent')->nullable();
         });
     }
 

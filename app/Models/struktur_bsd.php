@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class structur_bsd extends Model
+class struktur_bsd extends Model
 {
     use HasFactory;
 }

@@ -15,7 +15,7 @@ class CreateKategoriParentTable extends Migration
     {
         Schema::create('kategori_parent', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('parent')->nullable();
         });
     }
 

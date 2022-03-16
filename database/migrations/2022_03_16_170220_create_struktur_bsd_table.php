@@ -15,6 +15,7 @@ class CreateStrukturBsdTable extends Migration
     {
         Schema::create('struktur_bsd', function (Blueprint $table) {
             $table->id();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

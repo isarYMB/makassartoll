@@ -15,6 +15,14 @@ class CreatePrintInvoiceTable extends Migration
     {
         Schema::create('print_invoice', function (Blueprint $table) {
             $table->id();
+            $table->string('gerbang');
+            $table->string('gardu');
+            $table->integer('no_kartu');
+            $table->dateTime('tanggal_transaksi');
+            $table->integer('golongan');
+            $table->integer('tarif');
+            $table->integer('sisa_saldo');
+            $table->integer('call_center');
             $table->timestamps();
         });
     }

@@ -15,6 +15,9 @@ class CreateIconTable extends Migration
     {
         Schema::create('icon', function (Blueprint $table) {
             $table->id();
+            $table->string('nama')->nullable();
+            $table->string('unicode')->nullable();
+            $table->string('class')->nullable();
             $table->timestamps();
         });
     }

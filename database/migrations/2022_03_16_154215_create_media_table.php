@@ -15,6 +15,12 @@ class CreateMediaTable extends Migration
     {
         Schema::create('media', function (Blueprint $table) {
             $table->id();
+            $table->text('title')->nullable();
+            $table->text('konten')->nullable();
+            $table->string('image')->nullable();
+            $table->string('active')->default('1');
+            $table->integer('add_to_home')->default('1');
+            $table->integer('kategori_media')->nullable();
             $table->timestamps();
         });
     }

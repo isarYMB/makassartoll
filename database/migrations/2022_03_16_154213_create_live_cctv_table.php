@@ -15,7 +15,10 @@ class CreateLiveCctvTable extends Migration
     {
         Schema::create('live_cctv', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->text('name');
+            $table->string('ip_address');
+            $table->string('location');
+            $table->tinyInteger('active')->default('1');
         });
     }
 

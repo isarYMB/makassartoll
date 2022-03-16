@@ -15,7 +15,7 @@ class CreateKategoriMediaTable extends Migration
     {
         Schema::create('kategori_media', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('kategori_media')->nullable();
         });
     }
 

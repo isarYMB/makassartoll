@@ -15,6 +15,10 @@ class CreateNilaiBsdTable extends Migration
     {
         Schema::create('nilai_bsd', function (Blueprint $table) {
             $table->id();
+            $table->string('icon')->nullable();
+            $table->string('judul')->nullable();
+            $table->text('deskripsi')->nullable();
+            $table->integer('active')->nullable();
             $table->timestamps();
         });
     }

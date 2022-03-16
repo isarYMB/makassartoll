@@ -15,6 +15,11 @@ class CreateInfoTolTable extends Migration
     {
         Schema::create('info_tol', function (Blueprint $table) {
             $table->id();
+            $table->string('judul')->nullable();
+            $table->string('icon')->nullable();
+            $table->string('btn')->nullable();
+            $table->string('link')->nullable();
+            $table->integer('active')->nullable();
             $table->timestamps();
         });
     }

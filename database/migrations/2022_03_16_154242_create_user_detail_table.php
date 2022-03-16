@@ -15,6 +15,9 @@ class CreateUserDetailTable extends Migration
     {
         Schema::create('user_detail', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id')->nullable();
+            $table->string('no_telp')->nullable();
+            $table->string('alamat')->nullable();
             $table->timestamps();
         });
     }

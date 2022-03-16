@@ -15,6 +15,13 @@ class CreateGerbangTable extends Migration
     {
         Schema::create('gerbang', function (Blueprint $table) {
             $table->id();
+            $table->string('gerbang');
+            $table->integer('golongan1');
+            $table->integer('golongan2');
+            $table->integer('golongan3');
+            $table->integer('golongan4');
+            $table->integer('golongan5');
+            $table->string('image');
             $table->timestamps();
         });
     }
