@@ -15,6 +15,11 @@ class CreateCctvListTable extends Migration
     {
         Schema::create('cctv_list', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable();
+            $table->string('id_stream')->nullable();
+            $table->string('rtsp')->nullable();
+            $table->string('location')->nullable();
+            $table->string('desc')->nullable();
             $table->timestamps();
         });
     }

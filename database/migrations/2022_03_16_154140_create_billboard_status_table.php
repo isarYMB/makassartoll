@@ -15,7 +15,8 @@ class CreateBillboardStatusTable extends Migration
     {
         Schema::create('billboard_status', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('name')->nullable();
+            $table->tinyInteger('value')->nullable();
         });
     }
 

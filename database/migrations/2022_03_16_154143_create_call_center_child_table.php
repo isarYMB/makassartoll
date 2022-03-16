@@ -15,12 +15,16 @@ class CreateCallCenterChildTable extends Migration
     {
         Schema::create('call_center_child', function (Blueprint $table) {
             $table->id();
+            $table->string('foto')->nullable();
+            $table->string('title')->nullable();
+            $table->string('nomor')->nullable();
+            $table->string('deskripsi')->nullable();
             $table->timestamps();
         });
     }
 
     /**
-     * Reverse the migrations.
+     * Reverpse the migrations.
      *
      * @return void
      */
