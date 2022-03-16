@@ -15,8 +15,8 @@ class CreateCctvTable extends Migration
     {
         Schema::create('cctv', function (Blueprint $table) {
             $table->id();
-            $table->integer('port');
-            $table->string('titik_cctv');
+            $table->integer('port')->nullable();
+            $table->string('titik_cctv')->nullable();
         });
     }
 
