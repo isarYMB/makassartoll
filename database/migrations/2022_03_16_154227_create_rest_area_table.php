@@ -16,9 +16,8 @@ class CreateRestAreaTable extends Migration
         Schema::create('rest_area', function (Blueprint $table) {
             $table->id();
             $table->string('foto')->nullable();
-            $table->text('deskripsi')->nullable();
+            $table->longText('deskripsi')->nullable();
             $table->string('nama')->nullable();
-            $table->timestamps();
         });
     }
 

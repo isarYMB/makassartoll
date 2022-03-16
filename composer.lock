@@ -9718,6 +9718,10 @@
 <<<<<<< HEAD
     "plugin-api-version": "2.0.0"
 =======
+<<<<<<< HEAD
+    "plugin-api-version": "2.0.0"
+=======
     "plugin-api-version": "2.2.0"
 >>>>>>> bdbdc19429c53cab10e250925c2d4b72040f21d3
+>>>>>>> 77b9e849d3e4b9f811a3fced794d2d09c10ef4e0
 }

@@ -15,13 +15,13 @@ class CreateProfileBsdTable extends Migration
     {
         Schema::create('profile_bsd', function (Blueprint $table) {
             $table->id();
-            $table->string("judul")->nullable();
-            $table->string("image")->nullable();
-            $table->longText("konten")->nullable();
-            $table->string("bidang_usaha")->nullable();
-            $table->string("struktur")->nullable();
-            $table->longText("sejarah")->nullable();
+            $table->string('judul')->nullable();
+            $table->string('image')->nullable();
+            $table->longText('konten')->nullable();
+            $table->string('bidang_usaha')->nullable();
             $table->timestamps();
+            $table->string('struktur')->nullable();
+            $table->longText('sejarah')->nullable();
         });
     }
 

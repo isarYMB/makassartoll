@@ -19,6 +19,7 @@ class CreateRestAreaChildTable extends Migration
             $table->string('nama')->nullable();
             $table->string('icon')->nullable();
             $table->string('nama_inggris')->nullable();
+            $table->timestamps();
         });
     }
 

@@ -20,9 +20,9 @@ class CreateServiceLocationTable extends Migration
             $table->string('location')->nullable();
             $table->string('maps')->nullable();
             $table->longText('description')->nullable();
-            $table->tinyInteger('active');
-            $table->integer('kategori')->nullable();
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->tinyInteger('active')->default(1);
+            $table->integer('kategori');
         });
     }
 

@@ -19,7 +19,11 @@ class CreateTenantsTable extends Migration
             $table->string('company');
             $table->integer('phone');
             $table->string('email');
+<<<<<<< HEAD
             $table->longText('address');
+=======
+            $table->string('address');
+>>>>>>> 231bb27cab0335fdd07d0e8e70b4d783f967b461
             $table->timestamps();
             $table->integer('created_by')->nullable();
         });

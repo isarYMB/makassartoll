@@ -17,8 +17,12 @@ class CreateUserKartuTable extends Migration
             $table->id();
             $table->integer('user_id')->nullable();
             $table->string('kartu')->nullable();
+<<<<<<< HEAD
             $table->integer('bank')->nullable();
+=======
+>>>>>>> 231bb27cab0335fdd07d0e8e70b4d783f967b461
             $table->timestamps();
+            $table->integer('bank')->nullable();
         });
     }
 

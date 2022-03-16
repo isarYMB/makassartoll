@@ -15,7 +15,7 @@ class CreateBankDataTable extends Migration
     {
         Schema::create('bank_data', function (Blueprint $table) {
             $table->id();
-            $table->string('bank');
+            $table->string('bank')->nullable();
         });
     }
 
